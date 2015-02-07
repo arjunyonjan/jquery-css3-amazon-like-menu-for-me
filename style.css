@@ -28,7 +28,6 @@ a {
   float: left;
   height: 0;
   overflow: hidden;
-  transition: all 0.4s ease;
 }
 .kp-menu-container.on {
   height: 400px;
