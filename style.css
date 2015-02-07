@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans';
+  font-size: 13px;
+}
+a {
+  text-decoration: none;
+  color: #777;
+}
+.categories {
+  float: left;
+  position: relative;
+}
+.categories > a {
+  padding: 10px;
+  border-radius: 5px;
+  float: left;
+  color: #fff;
+  background: #d9534f;
+  position: relative;
+}
+.kp-menu-container {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  float: left;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.kp-menu-container.on {
+  height: 400px;
+  overflow: visible;
+}
+.kp-menu-container h3 {
+  margin: 20px 0 0 20px;
+  padding: 0;
+  color: #d9534f;
+}
+.kp-menu-container ul.main {
+  margin: 20px;
+  padding: 0;
+  float: left;
+  width: 150px;
+}
+.kp-menu-container ul.main > li {
+  list-style: none;
+  line-height: 28px;
+  position: relative;
+}
+.kp-menu-container ul.main > li a.active {
+  color: #5bc0de;
+}
+.kp-menu-container ul.main > li a:hover {
+  color: #5bc0de;
+}
+.kp-submenu-container {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 190px;
+  background: #fdfdfd;
+  height: 400px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 0;
+  overflow: hidden;
+  transition: all .4s ease;
+}
+.kp-submenu-container.on {
+  width: 450px;
+}
+.kp-submenu-container .submenu-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  display: none;
+}
+.kp-submenu-container ul {
+  padding: 0;
+}
+.kp-submenu-container ul li {
+  list-style: none;
+  line-height: 26px;
+  float: left;
+  width: 140px;
+  margin-left: 20px;
+}
